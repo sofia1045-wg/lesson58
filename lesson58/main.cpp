@@ -1,19 +1,17 @@
 #include "logic.h"
 
 int main() {
-	int class_a[DEFAULT_SIZE];
-	int class_b[DEFAULT_SIZE];
-	int class_c[DEFAULT_SIZE];
 
-	int size = 10;
+	int classes[DEFAULT_SIZE][DEFAULT_SIZE];
 
-	init(class_a, class_b, class_c, size);
+	int n = 3;
+	int m = 5;
 
-	print("Class A: " + convert(class_a, size) + ".\n");
-	print("Class B: " + convert(class_b, size) + ".\n");
-	print("Class C: " + convert(class_c, size) + ".\n");
+	init(classes, n, m);
 
-	print("Average mark from class A is " 
+	print("Class A: " + convert(classes, n, m) + ".\n");
+
+	print("Average mark from all classes " 
 		+ to_string(calculate_avg_mark(class_a, size)) + ".\n");
 
 	print("Average mark from class B is "

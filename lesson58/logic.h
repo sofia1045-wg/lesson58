@@ -1,3 +1,3 @@
 #include "util.h"
 
-double calculate_avg_mark(int marks[], int size);
+string calculate_avg_mark(int classes[][DEFAULT_SIZE], int n, int m);

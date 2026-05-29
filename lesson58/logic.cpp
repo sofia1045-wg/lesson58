@@ -1,6 +1,6 @@
 #include "logic.h"
 
-double calculate_avg_mark(int class_a[], int class_b[], int class_c[], int size) {
+string calculate_avg_mark(int classes[][DEFAULT_SIZE], int n, int m) {
 
 	if (size <= 0) {
 		return "Error.";

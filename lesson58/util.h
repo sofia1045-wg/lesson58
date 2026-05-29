@@ -8,8 +8,8 @@
 
 using namespace std;
 
-void init(int marks[], int size);
+void init(int classes[][DEFAULT_SIZE], int n, int m);
 
-string convert(int marks[], int size);
+string convert(int classes[][DEFAULT_SIZE], int n, int m);
 
 void print(string text);
